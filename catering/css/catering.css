@@ -63,6 +63,13 @@ body {
     padding: 42px 0
 }
 
+#about div span button {
+    background: #655a52;
+    box-shadow: 5px 5px 5px #ffffef;
+    color: #ffffef;
+    padding: 18px;
+}
+
 #moreinfo {
     background-color: #655a52;
     color: #ffffef;
@@ -94,6 +101,13 @@ body {
     font-size: 1.8em;
     font-weight: bold;
     margin-bottom: 12px
+}
+
+footer {
+    background: #000;
+    height: 60px;
+    text-align: center;
+    padding: 20px 0;
 }
 
 .transparency {
