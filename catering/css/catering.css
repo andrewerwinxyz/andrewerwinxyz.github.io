@@ -38,13 +38,9 @@ body {
     background: url(../img/sweedish_chef.png) bottom right/400px no-repeat;
     background-color: #ffffef;
     color: #655a52;
+    display: flex;
     min-height: 542px;
     padding: 40px 10vw 0
-}
-
-#about {
-    display: flex;
-    align-items: bottom
 }
 
 #about div h3 {
@@ -55,7 +51,7 @@ body {
 #about div p {
     font-size: 1.4em;
     padding: 10px 0;
-    width: 75%
+    width: 70%
 }
 
 #about div span {

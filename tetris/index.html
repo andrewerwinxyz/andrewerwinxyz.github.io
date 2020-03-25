@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>Tetris</title>
+        <style>
+        #assets
+        {
+            display: none;
+        }
+
+        #tetris
+        {
+            background-image: url(/tetris/background.jpeg);
+            background-size: cover;
+            border: solid 2px #000;
+            border-radius: 3%;
+            display: flex;
+            height: 600px;
+            padding: 1.5rem;
+            width: 430px;
+        }
+
+        #main
+        {
+            border: solid 2px #000;
+            height: 600px;
+            width: 300px;
+        }
+
+        #sidebar
+        {
+            color: #fff;
+            padding-left: 20px;
+            width: 100px;
+        }
+
+        #sidebar div
+        {
+            padding-bottom: 10px;
+        }
+
+        </style>
+    </head>
+    <body>
+        <div id="assets">
+            <img id="bg" src="/tetris/bg.png" height="400" width="200" />
+            <img id="cube" src="/tetris/cube.png" height="20" width="20" />
+        </div>
+        <h1>Tetris Clone</h1>
+        <p>Press SPACE to start. Use the ARROW KEYS to move right and left (DOWN ARROW to drop). Z and X will rotate.</p>
+        <div id="tetris">
+            <div id="main">
+                <canvas id="gamearena" height="600" width="300"></canvas>
+            </div>
+            <div id="sidebar">
+                <div id="scoreboard">
+                    <div>
+                        <p>Score</p>
+                        <span id="score">0</span>
+                    </div>
+                    <div>
+                        <p>Level</p>
+                        <span id="level">1</span>
+                    </div>
+                    <div>
+                        <p>Lines</p>
+                        <span id="lines">0</span>
+                    </div>
+                    <label>NEXT</label>
+                    <div id="bullpen">
+                        <canvas id="bullpenarea" height="80" width="80"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="/tetris/tetris.js"></script>
+    </body>
+</html>
