@@ -4,7 +4,7 @@ const ctx= cvs.getContext("2d");
 cvs.width = 1800;
 cvs.height = 800;
 
-const res = 10; /* pixle size */
+const res = 5; /* pixle size */
 
 const columns = cvs.width / res;
 const rows = cvs.height / res;
