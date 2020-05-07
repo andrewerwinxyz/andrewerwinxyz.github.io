@@ -1,10 +1,11 @@
+const generation = document.querySelector("#generation");
 const cvs = document.querySelector("canvas");
-const ctx= cvs.getContext("2d");
+const ctx = cvs.getContext("2d");
 
-cvs.width = 1800;
-cvs.height = 800;
+cvs.width = 900;
+cvs.height = 900;
 
-const res = 5; /* pixle size */
+const res = 10; /* pixle size */
 
 const columns = cvs.width / res;
 const rows = cvs.height / res;
@@ -14,14 +15,12 @@ var gen = 0; /* keep track of Grids */
 /* the initial grid */
 var grid = new Array(columns).fill(null).map(() =>
     new Array(rows).fill(null).map(() =>
-        Math.floor(Math.random() * 2)
-    )
-);
+        Math.floor(Math.random() * 2)));
 
 /* Start with initial (or last) grid and evaluate neighbors */
 function createNextGenGrid(prevGrid)
 {
-    let nextGrid = prevGrid.map((newarray) =>  [...newarray]);
+    let nextGrid = prevGrid.map((newarray) => [...newarray]);
 
     for(let column = 0; column < prevGrid.length; column++)
     {
@@ -51,14 +50,14 @@ function createNextGenGrid(prevGrid)
             }
             
             if(cell == 1 && (neighbors < 2 || neighbors > 3)) 
-	    {
-		nextGrid[column][row] = 0;
-	    }
+            {
+                nextGrid[column][row] = 0;
+            }
             
-	    if(cell == 0 && neighbors == 3) 
-	    {
-		nextGrid[column][row] = 1;
-	    }
+            if(cell == 0 && neighbors == 3) 
+            {
+                nextGrid[column][row] = 1;
+            }
         }
     }
 
@@ -86,6 +85,8 @@ function run()
     grid = createNextGenGrid(grid)
 
     gen++;
+
+    generation.innerHTML = gen;
 
     render(grid);
 

@@ -1,116 +1,125 @@
 @import url(https://fonts.googleapis.com/css?family=Great+Vibes|Roboto+Condensed&display=swap);
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: 'Roboto Condensed'
+  font-family: 'Roboto Condensed';
 }
 
 #showcase {
-    background: url(../img/foodbg.jpeg);
-    background-position: center 0;
-    background-size: cover;
-    color: #ffffef;
-    height: 100vh;
-    width: 100%
+  background: url(../img/foodbg.jpeg);
+  background-position: center 0;
+  background-size: cover;
+  color: #ffffef;
+  height: 100vh;
+  width: 100%;
 }
 
 #showcase h3 {
-    font-family: 'Great Vibes';
-    font-size: 6em;
-    font-weight: unset;
-    letter-spacing: -2px;
-    text-align: center;
-    text-shadow: -3px 3px 2px #000;
-    text-transform: capitalize;
-    padding-top: 40vh
+  font-family: 'Great Vibes';
+  font-size: 6em;
+  font-weight: unset;
+  letter-spacing: -2px;
+  text-align: center;
+  text-shadow: -3px 3px 2px #000;
+  text-transform: capitalize;
+  padding-top: 40vh;
 }
 
 #showcase p {
-    font-size: 1.4em;
-    text-align: center
+  font-size: 1.4em;
+  text-align: center;
 }
 
 #about {
-    background: url(../img/sweedish_chef.png) bottom right/400px no-repeat;
-    background-color: #ffffef;
-    color: #655a52;
-    display: flex;
-    min-height: 542px;
-    padding: 40px 10vw 0
+  background: url(../img/sweedish_chef.png) bottom right/400px no-repeat;
+  background-color: #ffffef;
+  color: #655a52;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 542px;
+  padding: 40px 10vw 0;
 }
 
 #about div h3 {
-    font-size: 2.6em;
-    padding-bottom: 3px
+  font-size: 2.6em;
+  padding-bottom: 3px;
 }
 
 #about div p {
-    font-size: 1.4em;
-    padding: 10px 0;
-    width: 70%
+  font-size: 1.4em;
+  padding: 10px 0;
+  width: 70%;
 }
 
 #about div span {
-    display: inline-block;
-    padding: 42px 0
+  display: inline-block;
+  padding: 42px 0;
 }
 
 #about div span button {
-    background: #655a52;
-    box-shadow: 5px 5px 5px #ffffef;
-    color: #ffffef;
-    padding: 18px;
+  background: #655a52;
+  -webkit-box-shadow: 5px 5px 5px #ffffef;
+          box-shadow: 5px 5px 5px #ffffef;
+  color: #ffffef;
+  padding: 18px;
 }
 
 #moreinfo {
-    background-color: #655a52;
-    color: #ffffef;
-    padding: 20px
+  background-color: #655a52;
+  color: #ffffef;
+  padding: 20px;
 }
 
 #moreinfo h3 {
-    font-size: 3em;
-    text-align: center
+  font-size: 3em;
+  text-align: center;
 }
 
 #moreinfo .services {
-    margin: 20px 0 30px;
-    display: flex;
-    justify-content: space-evenly
+  margin: 20px 0 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 #moreinfo .services div {
-    text-align: center;
-    width: 200px
+  text-align: center;
+  width: 200px;
 }
 
 #moreinfo .services div img {
-    width: 100px;
+  width: 100px;
 }
 
 #moreinfo .services div span {
-    display: inline-block;
-    font-size: 1.8em;
-    font-weight: bold;
-    margin-bottom: 12px
+  display: inline-block;
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-bottom: 12px;
 }
 
 footer {
-    background: #000;
-    height: 60px;
-    text-align: center;
-    padding: 20px 0;
+  background: #000;
+  height: 60px;
+  text-align: center;
+  padding: 20px 0;
 }
 
 .transparency {
-    background: rgba(0, 0, 0, 0.5);
-    height: 100%;
-    left: inherit;
-    position: inherit;
-    top: inherit;
-    width: 100%
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  left: inherit;
+  position: inherit;
+  top: inherit;
+  width: 100%;
 }
+/*# sourceMappingURL=catering.css.map */
